@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <H1 id="Heading">Welcome to the Naruto Gallery!!</H1>
+    <div class="full_display" id="fullDis">
+        <img src="img1.jpg" alt="" id="fullImg">
+        <span onclick="closeFullImg()">x</span>
+    </div>
+
+    <div class="img_box">
+        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/12/Jiraiya-and-Naruto.jpg?q=50&fit=crop&w=750&dpr=1.5" alt="" onclick="openFullImg(this.src)">
+        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/03/naruto-and-ichiraku-ramen.jpg?q=50&fit=crop&w=750&dpr=1.5" alt="" onclick="openFullImg(this.src)">
+        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/03/Naruto-happy-in-Shippuden.jpg?q=50&fit=crop&w=1100&h=618&dpr=1.5" alt="" onclick="openFullImg(this.src)">
+        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/03/naruto-training.jpg?q=50&fit=crop&w=750&dpr=1.5" alt="" onclick="openFullImg(this.src)">
+        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/01/Naruto-Rasengan-Variation-Lava-Rasen-Shuriken-Naruto-Anime.jpg?q=50&fit=crop&w=750&dpr=1.5" alt="" onclick="openFullImg(this.src)">
+        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/01/naruto-and-kurama.jpg?q=50&fit=crop&w=750&dpr=1.5" alt="" onclick="openFullImg(this.src)">
+        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/06/Uzumaki-Naruto-from-Naruto-Shippuden.jpg?q=50&fit=crop&w=750&dpr=1.5" alt="" onclick="openFullImg(this.src)">
+        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/11/Naruto-Hokage.jpg?q=50&fit=crop&w=750&dpr=1.5" alt="" onclick="openFullImg(this.src)">
+        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/01/Naruto-And-Sasuke-Bond-Naruto-Anime.jpg?q=50&fit=crop&w=750&dpr=1.5" alt="" onclick="openFullImg(this.src)">
+        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/02/Naruto-and-Hinata-On-Their-Wedding-Day-Cropped.jpg?q=50&fit=crop&w=750&dpr=1.5" alt="" onclick="openFullImg(this.src)">
+    </div>
+<script>
+    var fullDis = document.getElementById("fullDis");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullDis.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullDis.style.display= "none";
+    }
+</script>
+</body>
+</html>
